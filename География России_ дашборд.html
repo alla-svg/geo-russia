@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>География России: хозяйство и комплексы</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#e9f0f3;--card:#fff;--ink:#14283a;--mut:#566774;--a:#0e7c86;--a2:#d98e04;--ok:#2e8b57;--bad:#c0392b;--line:#cbd7de}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a22;--card:#17262f;--ink:#e6eef2;--mut:#9fb2bd;--a:#4fc3cf;--a2:#f0b44a;--ok:#5cc28a;--bad:#ff7a6b;--line:#2c414d}}
+:root[data-theme="dark"]{--bg:#0f1a22;--card:#17262f;--ink:#e6eef2;--mut:#9fb2bd;--a:#4fc3cf;--a2:#f0b44a;--ok:#5cc28a;--bad:#ff7a6b;--line:#2c414d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Trebuchet MS","Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:16px}
+header{background:linear-gradient(135deg,#0b4f63,#0e7c86);color:#fff;border-radius:18px;padding:22px;position:relative;overflow:hidden}
+header h1{margin:0 0 4px;font:700 clamp(1.4rem,4vw,2.1rem)/1.15 Georgia,serif}
+header p{margin:0;opacity:.85}
+header svg.bg{position:absolute;right:-20px;top:-10px;width:230px;opacity:.18}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat b{display:block;font-size:1.5rem;color:var(--a)}
+.stat span{color:var(--mut);font-size:.85rem}
+.bar{height:6px;background:var(--line);border-radius:4px;margin-top:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--a);width:0;transition:width .4s}
+nav{display:flex;gap:6px;overflow-x:auto;margin:8px 0 14px}
+nav button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;font:inherit;cursor:pointer}
+nav button[aria-selected=true]{background:var(--a);color:#fff;border-color:var(--a)}
+button:focus-visible,input:focus-visible,.card:focus-visible{outline:3px solid var(--a2);outline-offset:2px}
+section{display:none}section.on{display:block}
+input[type=search]{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;text-align:left;color:var(--ink);font:inherit}
+.card svg{width:56px;height:56px;color:var(--a);fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;background:color-mix(in srgb,var(--a) 10%,transparent);border-radius:12px;padding:8px}
+.card h3{margin:8px 0 4px;font:700 1.02rem/1.25 Georgia,serif}
+.card p{margin:0;color:var(--mut);font-size:.92rem}
+.card.seen{border-color:var(--a)}
+.card .more{display:none;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);color:var(--ink);font-size:.9rem}
+.card.open .more{display:block}.card.open .short{display:none}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+.panel h2{margin:0 0 8px;font:700 1.25rem Georgia,serif}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.two>div{border-radius:12px;padding:12px;border:1px solid var(--line)}
+.two svg{width:100%;height:110px}
+.two ul{margin:6px 0 0;padding-left:18px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
+.opt.ok{background:color-mix(in srgb,var(--ok) 22%,var(--card));border-color:var(--ok)}
+.opt.bad{background:color-mix(in srgb,var(--bad) 20%,var(--card));border-color:var(--bad)}
+.btn{background:var(--a);color:#fff;border:0;border-radius:10px;padding:10px 18px;font:inherit;cursor:pointer;margin-top:6px}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.fb{margin-top:8px;color:var(--mut);font-size:.92rem}
+.def{font-size:1.05rem}
+.meta{display:flex;justify-content:space-between;color:var(--mut);font-size:.88rem;margin-bottom:8px}
+.sortbtns{display:flex;gap:8px;margin-top:8px}.sortbtns .btn{flex:1}
+.result{text-align:center}.result b{font-size:2.4rem;color:var(--a)}
+@media(max-width:560px){.stats{gap:6px}.two{grid-template-columns:1fr}.stat b{font-size:1.2rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><div class="wrap">
+<header>
+<svg class="bg" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.2"><path d="M8 10l12-4 14 6 8-2v28l-8 2-14-6-12 4zM20 6v28M34 12v28"/></svg>
+<h1>География России: хозяйство и комплексы</h1>
+<p>Основные понятия, процессы и закономерности: изучи, закрепи, проверь себя.</p></header>
+<div class="stats">
+<div class="stat"><b id="sSeen">0/15</b><span>терминов изучено</span><div class="bar"><i id="bSeen"></i></div></div>
+<div class="stat"><b id="sPr">0</b><span>верных в закреплении</span></div>
+<div class="stat"><b id="sTest">—</b><span>лучший результат теста</span></div></div>
+<nav role="tablist"><button role="tab" aria-selected="true" data-t="learn">Термины</button><button role="tab" data-t="cmp">Сравнение</button><button role="tab" data-t="pr">Закрепление</button><button role="tab" data-t="test">Проверочный тест</button></nav>
+
+<section id="learn" class="on"><input type="search" id="q" placeholder="Найти термин…" aria-label="Поиск"><div class="grid" id="cards"></div></section>
+
+<section id="cmp"><div class="panel"><h2>Интенсивное и экстенсивное хозяйство</h2>
+<div class="two">
+<div style="background:color-mix(in srgb,var(--a) 8%,var(--card))"><svg viewBox="0 0 120 110" fill="none" stroke="var(--a)" stroke-width="3" stroke-linecap="round"><rect x="10" y="30" width="44" height="60" rx="3"/><path d="M20 80V60M32 80V50M44 80V40M80 85V25M80 25l-12 14M80 25l12 14M70 90h30"/></svg>
+<b>Интенсивное</b> («усиление»)<ul><li>опирается на научно-технический прогресс</li><li>лучше организован труд, выше его производительность</li><li>выпуск растёт без новых рабочих мест и новой распашки</li><li>ресурсы расходуются почти без роста</li></ul></div>
+<div style="background:color-mix(in srgb,var(--a2) 10%,var(--card))"><svg viewBox="0 0 120 110" fill="none" stroke="var(--a2)" stroke-width="3" stroke-linecap="round"><path d="M60 55L25 20M60 55l35-35M60 55L25 90M60 55l35 35M25 32V20h12M83 20h12v12M25 78v12h12M83 90h12V78"/><circle cx="60" cy="55" r="6"/></svg>
+<b>Экстенсивное</b> («расширение»)<ul><li>новое строительство и освоение новых земель</li><li>вовлечение нетронутых природных ресурсов</li><li>рост числа работающих</li><li>сначала хорошие результаты, затем быстрое исчерпание ресурсов</li></ul></div></div>
+<p class="fb">С ростом научно-технического уровня производства экстенсивное хозяйство уступает место интенсивному.</p></div>
+<div class="panel"><h2>Как связаны комплексы</h2>
+<svg viewBox="0 0 560 150" style="width:100%;max-height:170px" fill="none" stroke="var(--a)" stroke-width="2.4" stroke-linecap="round"><g font-family="Trebuchet MS,sans-serif" font-size="14" fill="var(--ink)" stroke="none"><text x="20" y="22">Межотраслевой комплекс — система отраслей одной продукции</text><text x="40" y="72">ТЭК</text><text x="140" y="72">АПК</text><text x="225" y="72">Машиностроение</text><text x="390" y="72">ТПК — на территории</text><text x="20" y="138">Комбинат: продукт одного предприятия — сырьё для другого</text></g><rect x="30" y="50" width="70" height="32" rx="8"/><rect x="125" y="50" width="70" height="32" rx="8"/><rect x="210" y="50" width="125" height="32" rx="8"/><rect x="375" y="50" width="170" height="32" rx="8"/></svg></div></section>
+
+<section id="pr"><div class="panel"><h2>Угадай термин по определению</h2><div id="prBox"></div></div>
+<div class="panel"><h2>Интенсивное или экстенсивное?</h2><div id="sortBox"></div></div></section>
+
+<section id="test"><div class="panel" id="testBox"></div></section>
+</div>
+<script>
+const I={
+apk:'<path d="M24 42V16M24 16c-6 0-8-5-8-9 6 0 8 4 8 9zM24 16c6 0 8-5 8-9-6 0-8 4-8 9zM24 28c-6 0-8-4-8-8M24 28c6 0 8-4 8-8"/>',
+eec:'<path d="M24 6l-9 36M24 6l9 36M17 20h14M14 32h20M6 14h36"/>',
+int:'<path d="M8 40V28M20 40V20M32 40V12M4 44h40M34 8h10v10"/>',
+kom:'<rect x="4" y="22" width="10" height="16"/><rect x="19" y="22" width="10" height="16"/><rect x="34" y="22" width="10" height="16"/><path d="M14 30h5M29 30h5M9 22v-8M24 22v-8"/>',
+mash:'<circle cx="24" cy="24" r="7"/><circle cx="24" cy="24" r="14" stroke-dasharray="6 5.4"/>',
+mez:'<circle cx="18" cy="24" r="12"/><circle cx="30" cy="24" r="12"/>',
+npk:'<path d="M18 6h12M20 6v14L8 40h32L28 20V6M14 32h20"/>',
+ryn:'<path d="M24 8v30M14 40h20M10 14h28M10 14L4 28h12zM38 14l-6 14h12z"/>',
+tpk:'<path d="M6 40V22l10 6V22l10 6V10h8v30z"/>',
+tek:'<path d="M24 6c2 8 12 12 12 24a12 12 0 01-24 0c0-6 4-8 5-14 3 2 5 4 7-10z"/>',
+uzl:'<path d="M6 24h36M24 6v36M10 10l28 28M38 10L10 38"/><circle cx="24" cy="24" r="5"/>',
+tru:'<circle cx="16" cy="14" r="5"/><circle cx="32" cy="14" r="5"/><path d="M6 40c0-10 5-14 10-14s10 4 10 14M22 40c0-10 5-14 10-14s10 4 10 14"/>',
+eka:'<circle cx="24" cy="14" r="6"/><path d="M10 42c0-12 6-16 14-16s14 4 14 16M18 32l4 4 8-8"/>',
+rai:'<path d="M8 10l12-4 14 6 8-2v28l-8 2-14-6-12 4zM20 6v28M34 12v28"/>',
+ext:'<path d="M24 24L8 8M24 24l16-16M24 24L8 40M24 24l16 16M8 16V8h8M32 8h8v8M8 32v8h8M32 40h8v-8"/>'};
+const T=[
+["АПК","apk","Совокупность взаимосвязанных отраслей, которые производят и перерабатывают сельскохозяйственную продукцию и доводят её до потребителя.","Агропромышленный комплекс"],
+["ЕЭС","eec","Система источников энергии, объединённая средствами её передачи; позволяет быстро маневрировать мощностями и передавать энергию или газ туда, где растёт потребление.","Единая энергетическая система"],
+["Интенсивное хозяйство","int","Хозяйство, развивающееся на основе научно-технического прогресса и лучшей организации труда: выпуск растёт без новых рабочих мест и распашки новых площадей."],
+["Комбинат","kom","Объединение предприятий разных отраслей, где продукция одного служит сырьём или полуфабрикатом для другого; позволяет полнее использовать сырьё и отходы."],
+["Машиностроительный комплекс","mash","Важнейшая отрасль обрабатывающей промышленности: станкостроение, приборостроение, энергетическое, транспортное, сельскохозяйственное машиностроение, электротехника, радиоэлектроника."],
+["Межотраслевой комплекс","mez","Система предприятий разных отраслей, объединённых выпуском определённой продукции или услуг."],
+["НПТК","npk","Сочетание на одной территории научных, опытно-конструкторских учреждений и промышленных предприятий.","Научно-производственный территориальный комплекс"],
+["Рыночная экономика","ryn","Хозяйство, основанное на законах рынка: предложении и спросе, балансе цен. Развивается товарное хозяйство, ориентированное на куплю-продажу, в отличие от натурального."],
+["ТПК","tpk","Взаимосвязанное сочетание отраслей материального производства на определённой территории, часть хозяйства страны или экономического района.","Территориально-производственный комплекс"],
+["ТЭК","tek","Совокупность топливной промышленности и электроэнергетики: добыча угля, нефти, газа, сланцев, торфа, урановых руд и выработка электроэнергии.","Топливно-энергетический комплекс"],
+["Транспортный узел","uzl","Пункт, где сходятся не менее 2–3 линий одного вида транспорта; комплексный узел объединяет разные виды транспорта (например, речной порт с железными и шоссейными дорогами)."],
+["Трудовые ресурсы","tru","Часть населения, способная работать в хозяйстве: трудоспособные, работающие инвалиды и льготные пенсионеры, работающие подростки 14–16 лет и работающие старше трудоспособного возраста."],
+["Экономически активное население","eka","Часть трудовых ресурсов: лица, занятые в экономике (по найму или с собственным бизнесом), и безработные."],
+["Экономический район","rai","Территориально и экономически целостная часть хозяйства страны со своеобразием условий, специализацией на основе географического разделения труда и устойчивыми внутрирайонными связями."],
+["Экстенсивное хозяйство","ext","Хозяйство, развивающееся путём нового строительства, освоения новых земель, использования нетронутых ресурсов, роста числа работающих; быстро ведёт к исчерпанию ресурсов."]];
+const $=s=>document.querySelector(s),sh=a=>[...a].sort(()=>Math.random()-.5);
+const S={seen:new Set(),pr:0,best:null};
+function stats(){$('#sSeen').textContent=S.seen.size+'/'+T.length;$('#bSeen').style.width=S.seen.size/T.length*100+'%';$('#sPr').textContent=S.pr;$('#sTest').textContent=S.best===null?'—':S.best+'/10'}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.setAttribute('aria-selected',x===b));document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t))});
+function cards(f=''){const c=$('#cards');c.innerHTML='';T.forEach((t,i)=>{if(f&&!(t[0]+(t[3]||'')+t[2]).toLowerCase().includes(f))return;const e=document.createElement('button');e.className='card'+(S.seen.has(i)?' seen':'');e.innerHTML=`<svg viewBox="0 0 48 48" aria-hidden="true">${I[t[1]]}</svg><h3>${t[0]}</h3>${t[3]?`<p class="short">${t[3]}</p>`:''}<div class="more">${t[2]}</div>`;e.onclick=()=>{e.classList.toggle('open');S.seen.add(i);e.classList.add('seen');stats()};c.appendChild(e)})}
+$('#q').oninput=e=>cards(e.target.value.toLowerCase().trim());
+// Practice A
+let pq=[],pi=0,pc=0;
+function startPr(){pq=sh(T.map((_,i)=>i)).slice(0,8);pi=0;pc=0;showPr()}
+function showPr(){const b=$('#prBox');if(pi>=pq.length){b.innerHTML=`<div class="result"><b>${pc}/${pq.length}</b><p>Серия завершена.</p><button class="btn" id="again">Ещё раз</button></div>`;$('#again').onclick=startPr;return}
+const k=pq[pi],opts=sh([k,...sh(T.map((_,i)=>i).filter(i=>i!==k)).slice(0,3)]);
+b.innerHTML=`<div class="meta"><span>Вопрос ${pi+1} из ${pq.length}</span></div><p class="def">${T[k][2]}</p><div id="o"></div><div class="fb" id="f"></div>`;
+opts.forEach(i=>{const o=document.createElement('button');o.className='opt';o.textContent=T[i][0];o.onclick=()=>{if($('#f').dataset.d)return;$('#f').dataset.d=1;const r=i===k;if(r){pc++;S.pr++;stats()}o.classList.add(r?'ok':'bad');[...$('#o').children].forEach(x=>{if(x.textContent===T[k][0])x.classList.add('ok')});$('#f').innerHTML=(r?'Верно! ':'Правильный ответ: '+T[k][0]+'. ')+'<br><button class="btn" id="nx">Дальше</button>';$('#nx').onclick=()=>{pi++;showPr()}};$('#o').appendChild(o)})}
+// Sorter
+const SR=[["Распашка новых земель","e"],["Внедрение научно-технических достижений","i"],["Рост числа работающих","e"],["Лучшая организация труда","i"],["Освоение нетронутых природных ресурсов","e"],["Рост выпуска без новых рабочих мест","i"],["Быстрое исчерпание ресурсов","e"],["Высокая производительность труда","i"]];
+let si=0,sc=0,sq=[];
+function startSort(){sq=sh(SR);si=0;sc=0;showSort()}
+function showSort(){const b=$('#sortBox');if(si>=sq.length){b.innerHTML=`<div class="result"><b>${sc}/${sq.length}</b><p>Готово.</p><button class="btn" id="a2">Ещё раз</button></div>`;$('#a2').onclick=startSort;return}
+b.innerHTML=`<div class="meta"><span>${si+1} из ${sq.length}</span></div><p class="def"><b>${sq[si][0]}</b></p><div class="sortbtns"><button class="btn" data-a="i">Интенсивное</button><button class="btn" style="background:var(--a2);color:#14283a" data-a="e">Экстенсивное</button></div><div class="fb" id="sf"></div>`;
+b.querySelectorAll('[data-a]').forEach(x=>x.onclick=()=>{if($('#sf').dataset.d)return;$('#sf').dataset.d=1;const r=x.dataset.a===sq[si][1];if(r){sc++;S.pr++;stats()}$('#sf').innerHTML=(r?'Верно! ':'Неверно: это признак '+(sq[si][1]==='i'?'интенсивного':'экстенсивного')+' хозяйства. ')+'<br><button class="btn" id="sn">Дальше</button>';$('#sn').onclick=()=>{si++;showSort()}})}
+// Test
+const Q=[
+["Что такое АПК?",["Совокупность отраслей по производству и переработке сельхозпродукции и доведению её до потребителя","Объединение научных институтов и заводов","Система источников энергии","Совокупность горно-добывающих отраслей"],"АПК — агропромышленный комплекс: от производства до потребителя."],
+["Выпуск продукции растёт без новых рабочих мест, распашки новых площадей и значительного роста потребления ресурсов. Это хозяйство…",["экстенсивное","интенсивное","натуральное","комплексное"],"Так развивается интенсивное хозяйство."],
+["Сколько линий одного вида транспорта должно сходиться в транспортном узле?",["Не менее 2–3","Ровно одна","Не менее 10","Только железные дороги"],"Узел — пункт схождения не менее 2–3 линий."],
+["Что НЕ входит в ТЭК?",["Добыча нефти и газа","Выработка электроэнергии","Станкостроение","Добыча угля"],"Станкостроение — часть машиностроительного комплекса."],
+["Главный признак комбината:",["Продукция одного предприятия — сырьё для другого","Все предприятия выпускают одинаковую продукцию","Только научные учреждения","Одна отрасль на большой территории"],"Предприятия связаны технологической цепочкой."],
+["Чем рыночная экономика отличается от натурального хозяйства?",["Продукты производятся для потребностей самих производителей","Ориентирована на куплю-продажу товаров","Не зависит от спроса","Не использует цены"],"Рыночное хозяйство товарное: спрос, предложение, цены."],
+["Кого включает экономически активное население?",["Всех жителей страны","Только пенсионеров","Занятых в экономике и безработных","Только школьников"],"Это занятые (по найму или со своим бизнесом) и безработные."],
+["Что обеспечивает ЕЭС?",["Быстрое маневрирование энергетическими мощностями","Только добычу газа","Переработку сельхозпродукции","Подготовку кадров"],"ЕЭС передаёт энергию туда, где растёт потребление."],
+["НПТК — это сочетание на одной территории…",["только заводов","научных, опытно-конструкторских учреждений и промышленных предприятий","только портов","только ферм"],"Наука и производство рядом."],
+["Какое хозяйство при низком научно-техническом уровне быстро приводит к исчерпанию природных и трудовых ресурсов?",["Интенсивное","Экстенсивное","Рыночное","Комплексное"],"Экстенсивное сначала успешно, но ресурсы быстро иссякают."]];
+let tq=[],ti=0,tc=0,tw=[];
+function startTest(){tq=sh(Q);ti=0;tc=0;tw=[];showT()}
+function showT(){const b=$('#testBox');if(ti>=tq.length){if(S.best===null||tc>S.best)S.best=tc;stats();b.innerHTML=`<div class="result"><b>${tc}/10</b><p>${tc>=9?'Отлично!':tc>=7?'Хорошо — повтори ошибки.':'Вернись к терминам и попробуй снова.'}</p></div>${tw.length?'<h3>Разбор ошибок</h3>'+tw.map(w=>`<p><b>${w[0]}</b><br>Верно: ${w[1]}<br><span class="fb">${w[2]}</span></p>`).join(''):''}<button class="btn" id="rt">Пройти заново</button>`;$('#rt').onclick=startTest;return}
+const q=tq[ti],ops=sh(q[1].map((t,i)=>({t,c:i===(q[3]!==undefined?q[3]:0)})));
+b.innerHTML=`<h2>Проверочный тест</h2><div class="meta"><span>Вопрос ${ti+1} из 10</span><span>Верно: ${tc}</span></div><div class="bar"><i style="width:${ti*10}%"></i></div><p class="def">${q[0]}</p><div id="to"></div><div class="fb" id="tf"></div>`;
+ops.forEach(o=>{const e=document.createElement('button');e.className='opt';e.textContent=o.t;e.onclick=()=>{if($('#tf').dataset.d)return;$('#tf').dataset.d=1;if(o.c)tc++;else tw.push([q[0],ops.find(x=>x.c).t,q[2]]);e.classList.add(o.c?'ok':'bad');[...$('#to').children].forEach((x,j)=>{if(ops[j].c)x.classList.add('ok')});$('#tf').innerHTML=q[2]+'<br><button class="btn" id="tn">'+(ti===9?'Результат':'Дальше')+'</button>';$('#tn').onclick=()=>{ti++;showT()}};$('#to').appendChild(e)})}
+// correct answers: index fixes (first option correct by default except listed)
+Q[1][3]=1;Q[3][3]=2;Q[6][3]=2;Q[8][3]=1;Q[9][3]=1;Q[5][3]=1;
+cards();startPr();startSort();startTest();stats();
+</script></body></html>
